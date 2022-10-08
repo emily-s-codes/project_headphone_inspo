@@ -1,0 +1,348 @@
+/* ================================
+    general styles
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'WorkSans-Light', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    color: #ebccc2;
+}
+
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    color: #ebccc2;
+}
+
+p {
+    color: rgb(115, 115, 115);
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+@font-face {
+    font-family: 'WorkSans-Light';
+    src: url("../fonts/WorkSans-Light.ttf");
+}
+
+@font-face {
+    font-family: 'WorkSans-Medium';
+    src: url("../fonts/WorkSans-Medium.ttf");
+}
+
+/* ================================
+    index.html GENERAL styles
+================================ */
+
+body {
+    background-color: #2e2e2e;
+}
+
+/* ================================
+    SEITENLEISTE styles
+================================ */
+
+#nav__bar {
+    display: flex;
+    position: sticky;
+    top: 30vh;
+    height: 40vh;
+    width: 10vw;
+    justify-content: space-between;
+}
+
+#nav__bar__circleline {
+    list-style-type: circle;
+    font-size: 4rem;
+    height: 30vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #867772;
+}
+
+#nav__bar__circleline li {
+    border-left: 1px solid #867772;
+    padding-left: -5vw;
+}
+
+#nav__names {
+    list-style-type: none;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2vw;
+    color: #867772;
+}
+
+#nav__bar a {
+    text-decoration: none;
+    color: #867772;
+    font-size: 1rem;
+}
+
+#nav__bar ul li a:hover {
+    text-decoration: none;
+    color: rgb(234, 204, 194);
+}
+
+#current__page a {
+    text-decoration: none;
+    color: rgb(234, 204, 194);
+}
+
+/* ================================
+    index.html HEADER styles
+================================ */
+
+body header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body header img {
+    width: 3vw;
+    margin: 2vh 4vw;
+}
+
+body header nav {
+    display: flex;
+    margin-right: 4vw;
+    width: 30vw;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+#header__nav div ul {
+    list-style-type: none;
+    display: flex;
+    width: 12vw;
+    justify-content: space-between;
+}
+
+body header nav div a {
+    color: #867772;
+    text-decoration: none;
+}
+
+#header__nav a:hover {
+    text-decoration: underline;
+    color: rgb(234, 204, 194);
+}
+
+/* ================================
+    index.html MAIN styles
+================================ */
+
+main h1 {
+    width: 33vw;
+    font-size: 3.5rem;
+    margin: 10vh 30vw;
+    color: #ebccc2;
+    letter-spacing: 0.2rem;
+    line-height: 4.5rem;
+}
+
+#about__background__image {
+    background-image: url("../img/section-about-1.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15vh 5vw;
+    height: 90vh;
+    width: 90vw;
+}
+
+#index__design {
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    margin: 15vh 15vw;
+}
+
+#index__design img {
+    width: 30vw;
+}
+
+#index__design article#about__article {
+    width: 27vw;
+    margin: 7vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#index__design article {
+    font-size: 2rem;
+}
+
+/* ================================
+    lounger.html styles
+================================ */
+#lounger__bg {
+    background-image: url("../img/section-voyager.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 60vw;
+}
+
+#lounger__section,
+#experience__section,
+#shop__section {
+    display: flex;
+    align-items: space-between;
+}
+
+#lounger__info,
+#experience__info,
+#shop__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25vw;
+    margin: 20vh 5vw;
+}
+
+#lounger__article,
+#experience__article {
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+/* ================================
+    experience.html styles
+================================ */
+
+#experience__bg {
+    background-image: url("../img/section-experience-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 60vw;
+}
+
+#experience__article {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ================================
+    inspiration.html styles
+================================ */
+#inspiration__video {
+    width: 50vw;
+    margin: 25vh 25vw 0 25vw;
+}
+
+#inspiration__alchemy {
+    margin: 20vh 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18vh;
+}
+
+div.alchemy__divs {
+    display: flex;
+    flex-direction: column;
+    height: 7vh;
+    justify-content: space-between;
+}
+
+#inspiration__alchemy ul li {
+    display: inline-block;
+    border: 1px solid #ebccc2;
+    padding: 0.5vh 1vw;
+    border-radius: 5px;
+    letter-spacing: 0.2rem;
+    color: rgb(115, 115, 115);
+}
+
+#quadrant__section {
+    width: 60vw;
+    margin: auto 20vw 20vh 20vw;
+}
+
+#quadrant__section div {
+    display: flex;
+}
+
+#quadrant__section article {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 8vh 2vw;
+}
+
+#quadrant__section img {
+    width: 30vw;
+}
+
+/* ================================
+    shop.html styles
+================================ */
+
+#shop__bg {
+    background-image: url("../img/section-composition4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 60vw;
+}
+
+#shop__info {
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#shop__article {
+    text-align: center;
+}
+
+#shop__article__text {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+#shop__article a {
+    text-decoration: none;
+    padding: 0.7vh 1vw;
+    text-align: center;
+    color: #2e2e2e;
+    letter-spacing: 0.2rem;
+    background-color: #ebccc2;
+    border-radius: 2px;
+}
