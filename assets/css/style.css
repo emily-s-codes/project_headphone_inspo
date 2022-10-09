@@ -58,6 +58,8 @@ body {
     height: 40vh;
     margin-top: 30vh;
     position: fixed;
+    z-index: 1;
+    top: 0;
 }
 
 #bar {
@@ -123,7 +125,7 @@ body header {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 body header img {
@@ -131,10 +133,10 @@ body header img {
     margin: 2vh 4vw;
 }
 
-body header nav {
+#header__nav {
     display: flex;
     margin-right: 4vw;
-    width: 40vw;
+    width: 38vw;
     align-items: center;
     justify-content: space-around;
     font-size: 1rem;
@@ -143,18 +145,19 @@ body header nav {
 #header__nav div ul {
     list-style-type: none;
     display: flex;
-    width: 12vw;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 body header nav div a {
     color: #867772;
     text-decoration: none;
+    transition: color 0.5s ease-out;
 }
 
 #header__nav a:hover {
     text-decoration: underline;
     color: rgb(234, 204, 194);
+    transition: color 0.5s ease-out;
 }
 
 /* ================================
