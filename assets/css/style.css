@@ -55,54 +55,64 @@ body {
 
 #nav__bar {
     display: flex;
-    position: sticky;
-    top: 30vh;
     height: 40vh;
-    width: 10vw;
-    justify-content: space-between;
+    margin-top: 30vh;
+    position: fixed;
 }
 
-#nav__bar__circleline {
-    list-style-type: circle;
-    font-size: 4rem;
-    height: 30vh;
-    margin-left: 5vw;
+#bar {
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #867772;
 }
 
-#nav__bar__circleline li {
-    border-left: 1px solid #867772;
-    padding-left: -5vw;
+#dot__line {
+    margin-left: 1vw;
+    width: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dot {
+    border: 1px solid rgb(115, 115, 115);
+    border-radius: 50%;
+    height: 1vh;
+    width: 1vh;
+}
+
+.line {
+    width: 0.1vw;
+    height: 5.5vh;
+    border-left: 1px solid rgb(115, 115, 115);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 #nav__names {
     list-style-type: none;
-    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 2vw;
-    color: #867772;
 }
 
-#nav__bar a {
-    text-decoration: none;
-    color: #867772;
-    font-size: 1rem;
-}
-
-#nav__bar ul li a:hover {
+a {
     text-decoration: none;
     color: rgb(234, 204, 194);
+    padding-left: 3vw;
 }
 
-#current__page a {
-    text-decoration: none;
-    color: rgb(234, 204, 194);
+#current__page {
+    color: white;
 }
+
+#current__dot {
+    outline: 1px solid rgb(234, 204, 194);
+    outline-offset: 2px;
+    background-color: none;
+}
+
 
 /* ================================
     index.html HEADER styles
@@ -124,7 +134,7 @@ body header img {
 body header nav {
     display: flex;
     margin-right: 4vw;
-    width: 30vw;
+    width: 40vw;
     align-items: center;
     justify-content: space-around;
     font-size: 1rem;
